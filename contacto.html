@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contacto | Ecos Arquitectura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header_superior">
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="imagenes/logo.svg" alt="" width="90" height="80">
+                <span>Ecos Arquitectura</span>
+            </a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="listado_tabla.html">Servicios</a></li>
+                <li><a href="listado_box.html">Proyectos</a></li>
+                <li><a href="comprar.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container_form">
+        <header class="header_pagina">
+            <h1>Contactános</h1>
+            <p>Podés completar el formulario para ayudarte con tu proyecto.</p>
+        </header>
+
+        <section class="contacto_form">
+            <h2>Solicitar Consulta</h2>
+
+            <form id="contactoForm">
+                <div class="fila">
+                    <div class="campo">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" class="input" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" class="input" required>
+                    </div>
+                </div>
+
+                <div class="fila">
+                    <div class="campo">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" class="input" required>
+                    </div>
+                    <div class="campo">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" id="direccion" name="direccion" class="input">
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label>Medio de Contacto Preferido *</label>
+                    <div class="opcion_contacto">
+                        <label class="opcion_item">
+                            <input type="radio" name="medio_contacto" value="email" required>
+                            Email
+                        </label>
+                        <label class="opcion_item">
+                            <input type="radio" name="medio_contacto" value="telefono" required>
+                            Teléfono
+                        </label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label>Servicios de Interés *</label>
+                    <div class="servicio_grupo">
+                        <label class="servicio_item">
+                            <input type="checkbox" name="servicios[]" value="disenos_personalizados">
+                            Diseños personalizados
+                        </label>
+                        <label class="servicio_item">
+                            <input type="checkbox" name="servicios[]" value="direccion_obras">
+                            Dirección y ejecución de obras
+                        </label>
+                        <label class="servicio_item">
+                            <input type="checkbox" name="servicios[]" value="remodelaciones">
+                            Remodelaciones y ampliaciones
+                        </label>
+                        <label class="servicio_item">
+                            <input type="checkbox" name="servicios[]" value="diseno_interiores">
+                            Asesoría en diseño de interiores
+                        </label>
+                        <label class="servicio_item">
+                            <input type="checkbox" name="servicios[]" value="paisajismo">
+                            Planificación urbana y paisajismo
+                        </label>
+                        <label class="servicio_item">
+                            <input type="checkbox" name="servicios[]" value="consultoria">
+                            Consultoría general
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="campo">
+                    <label for="mensaje">Describe tu Proyecto *</label>
+                    <textarea id="mensaje" name="mensaje" class="input" required></textarea>
+                </div>
+
+                <button type="submit" class="boton_enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>info@ecosarquitectura.com</p>
+        <p>+54 11 xxxx-xxxx</p><br>
+        <p>&copy; 2025 Ecos Arquitectura</p>
+    </footer>
+    
+</body>
+</html>
